@@ -1,0 +1,35 @@
+{
+  "name": "pwa-todo-app",
+  "version": "0.1.0",
+  "description": "PWA Todo App",
+  "main": "index.js",
+  "author": "Jean-Marc Rakotoarisoa",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --hot --open 'Google Chrome'",
+    "build": "NODE_ENV=production webpack",
+    "serve:prod": "npm run build && serve dist"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-webpack-plugin": "^0.1.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-pwa-manifest": "^3.6.2"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "lodash": "^4.17.10"
+  }
+}
